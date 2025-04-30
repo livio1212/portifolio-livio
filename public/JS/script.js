@@ -12,8 +12,8 @@ form.addEventListener('submit', async function (e) {
 
 
   try {
-    const response = await fetch('https://portifolio-api.onrender.com/send-email', {
-      method: 'POST',
+    const response = await fetch('https://portfolio-backend-1e5b.onrender.com', {
+      method: 'post',
       headers: {
         'Content-Type': 'application/json'
       },
