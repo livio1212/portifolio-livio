@@ -12,7 +12,7 @@ form.addEventListener('submit', async function (e) {
 
 
   try {
-    const response = await fetch('/send-email', {
+    const response = await fetch('https://portifolio-api.onrender.com/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
