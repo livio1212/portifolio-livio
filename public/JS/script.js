@@ -1,13 +1,33 @@
-function toggleDropdown() {
-    const menu = document.getElementById('dropdownMenu');
-    menu.classList.toggle('hidden');
-  }
+const form = document.getElementById('contactForm');
 
-  // Fecha o menu ao clicar fora
-  window.addEventListener('click', function (e) {
-    const menu = document.getElementById('dropdownMenu');
-    const button = e.target.closest('button');
-    if (!menu.contains(e.target) && !button) {
-      menu.classList.add('hidden');
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    subject: form.subject.value,
+    message: form.message.value
+  };
+
+
+  try {
+    const response = await fetch('/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      alert('Formulario enviado com sucesso!');
+      form.reset();
+    } else {
+      alert('Erro ao enviar formulario. Tente novamente.');
     }
-  });
+  } catch (err) {
+    console.error(err);
+    alert('Erro de rede ou servidor. Tente novamente.');
+  }
+});

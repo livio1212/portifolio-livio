@@ -6,7 +6,7 @@
     <title>Portfólio | Lívio Costa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="gradient-bg min-h-screen text-gray-100 font-sans">
     <!-- Header/Navigation -->
@@ -23,8 +23,8 @@
               <a href="#about" class="nav-item">Sobre</a>
               <a href="#skills" class="nav-item">Habilidades</a>
               <a href="#projects" class="nav-item">Projetos</a>
-              <a href="#contact" class="nav-item font-semibold border border-blue-500 px-3 py-1 rounded-md hover:bg-blue-500 hover:text-white transition">
-                Contato
+              <a href="./Curriculo_Livio.pdf" class="nav-item font-semibold border border-blue-500 px-3 py-1 rounded-md hover:bg-blue-500 hover:text-white transition">
+                Baixar CV
               </a>
             </div>
         
@@ -56,7 +56,7 @@
         </div>
         <div class="md:w-1/2 flex justify-center">
             <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-400">
-                <img src="/public/img/profile.png" 
+                <img src="./img/profile.png" 
                      alt="Foto do Lívio Costa" 
                      class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-blue-400 opacity-10"></div>
@@ -201,7 +201,7 @@
                 <!-- Project 1 -->
                 <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
                     <div class="h-48 overflow-hidden">
-                        <img src="./public/img/projeto3.png" 
+                        <img src="./img/projeto3.png" 
                              alt="PokeAPI Pokedex" 
                              class="w-full h-full object-cover">
                     </div>
@@ -218,10 +218,10 @@
 
                         </div>
                         <div class="flex justify-between">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+                            <a href="https://github.com/livio1212/projeto-pokemon" class="text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-code mr-1"></i> Código
                             </a>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+                            <a href="https://github.com/livio1212/projeto-pokemon" class="text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-external-link-alt mr-1"></i> Demo
                             </a>
                         </div>
@@ -231,7 +231,7 @@
                 <!-- Project 2 -->
                 <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
                     <div class="h-48 overflow-hidden">
-                        <img src="./public/img/projeto1.png" 
+                        <img src="./img/projeto1.png" 
                              alt="itau Banco" 
                              class="w-full h-full object-cover">
                     </div>
@@ -244,10 +244,10 @@
                             <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
                         </div>
                         <div class="flex justify-between">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+                            <a href="https://github.com/livio1212/Desafio_JuniorItau" class="text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-code mr-1"></i> Código
                             </a>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+                            <a href="https://github.com/livio1212/Desafio_JuniorItau" class="text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-external-link-alt mr-1"></i> Demo
                             </a>
                         </div>
@@ -257,7 +257,7 @@
                 <!-- Project 3 -->
                 <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
                     <div class="h-48 overflow-hidden">
-                        <img src="./public/img/pojeto2.png" 
+                        <img src="./img/pojeto2.png" 
                              alt="Snake Game Java" 
                              class="w-full h-full object-cover">
                     </div>
@@ -270,10 +270,10 @@
                             <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">POO</span>
                         </div>
                         <div class="flex justify-between">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+                            <a href="https://github.com/livio1212/snake-game" class="text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-code mr-1"></i> Código
                             </a>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+                            <a href="https://github.com/livio1212/snake-game" class="text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-external-link-alt mr-1"></i> Demo
                             </a>
                         </div>
@@ -298,7 +298,7 @@
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h3 class="text-2xl font-semibold mb-6">Vamos trabalhar juntos!</h3>
                     <p class="text-gray-300 mb-8">
-                        Estou interessado em oportunidades freelance, projetos desafiadores e colaborações. Se você tem um projeto que precisa de um backend robusto, entre em contato.
+                        Estou interessado em oportunidades para estagio, projetos desafiadores e colaborações. Se você tem um projeto que precisa de um backend robusto, entre em contato.
                     </p>
                     
                     <div class="space-y-6">
@@ -356,25 +356,25 @@
                 </div>
                 
                 <div class="md:w-1/2 md:pl-12">
-                    <form class="bg-gray-800 rounded-lg p-8">
+                    <form class="bg-gray-800 rounded-lg p-8" method="post" id="contactForm">
                         <div class="mb-6">
                             <label for="name" class="block text-gray-300 mb-2">Nome</label>
-                            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+                            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="name" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="email" class="block text-gray-300 mb-2">Email</label>
-                            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+                            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="email" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="subject" class="block text-gray-300 mb-2">Assunto</label>
-                            <input type="text" id="subject" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+                            <input type="text" id="subject" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="subject" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="message" class="block text-gray-300 mb-2">Mensagem</label>
-                            <textarea id="message" rows="5" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"></textarea>
+                            <textarea id="message" rows="5" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="message" required></textarea>
                         </div>
                         
                         <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
@@ -395,10 +395,10 @@
                 </div>
                 
                 <div class="flex space-x-6 mb-4 md:mb-0">
-                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                    <a href="https://github.com/livio1212" class="text-gray-400 hover:text-blue-400 transition">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                    <a href="https://www.linkedin.com/in/livio-costa/" class="text-gray-400 hover:text-blue-400 transition">
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
                     <a href="#" class="text-gray-400 hover:text-blue-400 transition">
@@ -416,6 +416,8 @@
         </div>
     </footer>
 
-    <script src="./public/JS/script.js"></script>
+    <script src="JS/script.js"></script>
+
+    
 </body>
 </html>
