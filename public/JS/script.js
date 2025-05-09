@@ -12,7 +12,7 @@ form.addEventListener('submit', async function (e) {
 
 
   try {
-    const response = await fetch('https://portfolio-backend-occ7lw.fly.dev', {
+    const response = await fetch('https://portfolio-backend-occ7lw.fly.dev/send-email', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
