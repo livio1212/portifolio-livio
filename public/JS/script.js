@@ -1,4 +1,8 @@
 const form = document.getElementById('contactForm');
+const sendBtn = document.getElementById('sendBtn');
+const sendBtnText = document.getElementById('sendBtnText');
+const sendBtnLoader = document.getElementById('sendBtnLoader')
+
 
 form.addEventListener('submit', async function (e) {
   e.preventDefault();
@@ -10,6 +14,9 @@ form.addEventListener('submit', async function (e) {
     message: form.message.value
   };
 
+  sendBtn.disabled = true;
+  sendBtnText.textContent = "Enviando..."
+  sendBtnLoader.classList.remove("hidden");
 
   try {
     const response = await fetch('https://portfolio-backend-occ7lw.fly.dev/send-email', {
@@ -30,5 +37,10 @@ form.addEventListener('submit', async function (e) {
   } catch (err) {
     console.error(err);
     alert('Erro de rede ou servidor. Tente novamente.');
+  } finally{
+
+    sendBtn.disabled = false;
+    sendBtnText.textContent = "Enviar Mensagem";
+    sendBtnLoader.classList.add("hidden");
   }
 });
