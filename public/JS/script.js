@@ -4,6 +4,8 @@ const sendBtnText = document.getElementById('sendBtnText');
 const sendBtnLoader = document.getElementById('sendBtnLoader')
 
 
+ 
+
 form.addEventListener('submit', async function (e) {
   e.preventDefault();
 
@@ -36,7 +38,7 @@ form.addEventListener('submit', async function (e) {
     }
   } catch (err) {
     console.error(err);
-    alert('Erro de rede ou servidor. Tente novamente.');
+    alert('Servidor temporariamente fora do ar.');
   } finally{
 
     sendBtn.disabled = false;
