@@ -4,7 +4,16 @@ const sendBtnText = document.getElementById('sendBtnText');
 const sendBtnLoader = document.getElementById('sendBtnLoader')
 
 
- 
+ const tempoParaAparecer = 1000;
+ const tempoVisivel = 1000;
+
+ setTimeout(() => {
+    document.getElementById('aviso').style.display = 'block';
+
+    setTimeout(() => {
+      document.getElementById('aviso').style.display = 'none';
+    }, tempoVisivel);
+ }, tempoParaAparecer);
 
 form.addEventListener('submit', async function (e) {
   e.preventDefault();
