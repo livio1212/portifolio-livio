@@ -4,8 +4,13 @@ const sendBtnText = document.getElementById('sendBtnText');
 const sendBtnLoader = document.getElementById('sendBtnLoader')
 
 
- const tempoParaAparecer = 1000;
- const tempoVisivel = 1000;
+ 
+ const menuBtn = document.getElementById('menu-btn');
+ const mobileBtn = document.getElementById('mobile-menu');
+
+ menuBtn.addEventListener('click', () => {
+  mobileBtn.classList.toggle('hidden');
+ });
 
  setTimeout(() => {
     document.getElementById('aviso').style.display = 'block';
