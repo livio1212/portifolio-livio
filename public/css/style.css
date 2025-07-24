@@ -1,4 +1,59 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inconsolata', monospace;
+            background-color: #000;
+            color: #00ff41;
+            overflow-x: hidden;
+        }
+        
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        .terminal-effect {
+            border-right: 0.15em solid #00ff41;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00ff41; }
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41;
+        }
+        
+        .glow-box {
+            box-shadow: 0 0 10px #00ff41, 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+        
+        .code-line {
+            counter-increment: line;
+            position: relative;
+            padding-left: 3em;
+        }
+        
+        .code-line::before {
+            content: counter(line);
+            position: absolute;
+            left: 1em;
+            color: #555;
+        }
+        
+        .skill-bar {
+            background: linear-gradient(90deg, #00ff41 0%, rgba(0, 255, 65, 0.5) 100%);
+            height: 6px;
+            border-radius: 3px;
+            transition: width 1s ease-in-out;
+        }
 
 .aviso{
     display: none;
@@ -17,12 +72,10 @@
       
 }
 
-/* Fundo gradiente escuro com toque tecnológico */
 body.gradient-bg {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
-/* Animação de hover nos cards */
 .card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -31,7 +84,6 @@ body.gradient-bg {
     box-shadow: 0 10px 25px rgba(0, 122, 255, 0.2);
 }
 
-/* Estilo para efeito de digitação no título */
 .typewriter {
     overflow: hidden;
     border-right: .15em solid #60a5fa;
@@ -58,10 +110,9 @@ body.gradient-bg {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #60a5fa }
+    50% { border-color: #c6ced7 }
 }
 
-/* Links sociais com efeito neon */
 .social-icon {
     color: #60a5fa;
     box-shadow: 0 0 5px #60a5fa;
@@ -81,7 +132,6 @@ button:hover, .btn:hover {
     transform: translateY(-2px);
 }
 
-/* Formulário mais escuro e elegante */
 form input, form textarea {
     background-color: #1e293b;
     color: #f1f5f9;
